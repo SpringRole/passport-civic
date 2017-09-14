@@ -1,0 +1,15 @@
+{
+  "name": "passport-civic",
+  "version": "1.0.1",
+  "description": "",
+  "main": "./lib",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "passport-strategy": "^1.0.0",
+    "civic-sip-api": "^0.4.2"
+  },
+  "author": "Vinay Agarwal",
+  "license": "ISC"
+}
