@@ -16,8 +16,8 @@ unobtrusively integrated into any application or framework that supports
 
 #### Configure Strategy
 
-The Facebook authentication strategy authenticates users using a Facebook
-account and OAuth 2.0 tokens.  The strategy requires a `verify` callback, which
+The Civic authentication strategy authenticates users using a Civic
+app.  The strategy requires a `verify` callback, which
 accepts these credentials and calls `done` providing a user, as well as
 `options` specifying a appId, prvKey, and appSecret.
 
@@ -44,7 +44,7 @@ application:
     app.get('/auth/civic',
       passport.authenticate('civic'));
 
-    app.get('/auth/facebook/civic',
+    app.get('/auth/civic',
       passport.authenticate('civic', { failureRedirect: '/login' }),
       function(req, res) {
         // Successful authentication, redirect home.
