@@ -10,6 +10,19 @@
     "passport-strategy": "^1.0.0",
     "civic-sip-api": "^0.4.2"
   },
+  "homepage": "https://github.com/jaredhanson/passport-facebook#readme",
+  "keywords": [
+    "passport",
+    "civic",
+    "auth",
+    "authn",
+    "authentication",
+    "identity"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/SpringRole/passport-civic.git"
+  },
   "author": "Vinay Agarwal",
   "license": "ISC"
 }
