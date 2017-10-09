@@ -26,10 +26,28 @@ accepts these credentials and calls `done` providing a user, as well as
         prvKey: PRIVATE_KEY,
         appSecret: "Something-secret"
       },
-      function(error, profile, done) {
+      function(profile, done) {
         User.findOrCreate({ civicId: profile.userId }, function (err, user) {
           return done(err, user);
         });
+      }
+    ));
+
+#### Parameters
+
+The verify callback can be supplied with the `request` object by setting
+the `passReqToCallback` option to true, and changing callback arguments
+accordingly.
+
+    passport.use(new CivicStrategy({
+        appId: APP_ID,
+        prvKey: PRIVATE_KEY,
+        appSecret: "Something-secret"
+        passReqToCallback: true
+      },
+      function(req, profile, done) {
+        // request object is now first argument
+        // ...
       }
     ));
 
